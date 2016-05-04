@@ -1,0 +1,8 @@
+- name: packages | Update apt cache
+  apt: update_cache=yes
+  sudo: yes
+
+- name: name: packages | install must-have packages - {{ item }}
+  apt: pkg={{ item }}
+  with_items: packages
+  sudo: yes

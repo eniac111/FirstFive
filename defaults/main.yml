@@ -1,0 +1,20 @@
+# Must-have packages first
+
+packages:
+  - curl
+  - wget
+  - httpie
+  - zsh
+  - vim
+  - git
+  - tmux
+  - htop
+  - atop
+  - sysstat
+  - screen
+  - ntp
+  - unzip
+  - unrar
+  - sl
+  - mc
+  - cowsay
