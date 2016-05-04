@@ -1,6 +1,9 @@
 # Must-have packages first
 
-packages:
+FirstFive_machine: "server"
+FirstFive_multiple_usr: false
+FirstFive_user: "eniac"
+FirstFive_packages:
   - curl
   - wget
   - httpie
@@ -18,3 +21,11 @@ packages:
   - sl
   - mc
   - cowsay
+
+FirstFive_workstation_packages:
+  - vlc
+  - firefox
+  - pass
+  - lxc
+  - virt-manager
+

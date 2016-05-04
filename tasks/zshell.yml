@@ -1,0 +1,11 @@
+- name: Zhell | Clone the Oh-My-Zsh repo
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=/home/$FirstFive_user/.oh-my-zsh
+  when: not FirstFive_multiple_usr
+
+- name: Zshell | Configure Oh-My-Zsh
+  git: template: src=files/zshrc.in dest=/home/$user/conf/zshrc owner= {{ FirstFive_user }}
+  when: not FirstFive_multiple_usr
+
+- name: Zshell | Remove Standart Oh-My-Zsh config
+  file: path=/home/$user/.zshrc state=absent
+  when: not FirstFive_multiple_usr
